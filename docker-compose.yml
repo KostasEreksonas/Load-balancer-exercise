@@ -1,11 +1,26 @@
 services:
-  web:
-    image: php:8.2-apache
-    volumes:
-      - ./app:/var/www/html/
-    ports:
-      - '80:80'
+  backend:
+    build:
+      context: ./docker/php/
+      dockerfile: Dockerfile
     environment:
-      APPLICATION_ENV: development
-      APACHE_LOG_DIR: /var/log/apache2
-      APACHE_DOCUMENT_ROOT: /var/www/html
+      - PORT=80
+    deploy:
+      replicas: 5
+    networks:
+      - loadbalancing
+
+  nginx:
+    build:
+      context: ./docker/nginx/
+      dockerfile: Dockerfile
+    container_name: nginx
+    ports:
+      - "3000:80"
+    networks:
+      - loadbalancing
+    depends_on:
+      - backend
+
+networks:
+  loadbalancing:
