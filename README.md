@@ -8,6 +8,7 @@ Table of Contents
 * [Docker_Compose](#Docker-Compose)
 * [Setup](#Setup)
 * [Load_Testing](#Load-Testing)
+* [Usage](#Usage)
 
 # Application
 
@@ -32,3 +33,9 @@ Use following command to setup the environment:
 # Load Testing
 
 Apache Jmeter will be used for load testing.
+
+# Usage
+
+`localhost:3000` to open Grafana dashboard.
+`localhost:8080` to open PHP application.
+`localhost:9090` to open Prometheus dashboard.
