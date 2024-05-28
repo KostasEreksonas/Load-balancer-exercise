@@ -9,18 +9,40 @@ services:
       replicas: 5
     networks:
       - loadbalancing
-
   nginx:
     build:
       context: ./docker/nginx/
       dockerfile: Dockerfile
-    container_name: nginx
+    container_name: load_balancer
     ports:
       - "8080:80"
     networks:
       - loadbalancing
     depends_on:
       - backend
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - "./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml"
+      - "./prometheus/rules.yml:/etc/prometheus/rules.yml"
+    ports:
+      - "9090:9090"
+    networks:
+      - loadbalancing
+  node-exporter:
+    image: prom/node-exporter
+    ports:
+      - "9100:9100"
+    networks:
+      - loadbalancing
+  alert-manager:
+    image: prom/alertmanager
+    volumes:
+      - "./prometheus/alertmanager.yml:/alertmanager/alertmanager.yml"
+    ports:
+      - "9093:9093"
+    networks:
+      - loadbalancer
 
 networks:
   loadbalancing:
