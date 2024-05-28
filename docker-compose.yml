@@ -22,9 +22,10 @@ services:
       - backend
   prometheus:
     image: prom/prometheus
+    container_name: prometheus
     volumes:
       - "./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml"
-      - "./prometheus/rules.yml:/etc/prometheus/rules.yml"
+      - "./prometheus/rule.yml:/etc/prometheus/rules.yml"
     ports:
       - "9090:9090"
     networks:
@@ -42,7 +43,16 @@ services:
     ports:
       - "9093:9093"
     networks:
-      - loadbalancer
+      - loadbalancing
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    volumes:
+      - "./grafana/provisioning:/etc/grafana/provisioning"
+    ports:
+      - "3000:3000"
+    networks:
+      - loadbalancing
 
 networks:
   loadbalancing:
