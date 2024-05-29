@@ -36,6 +36,7 @@ Apache Jmeter will be used for load testing.
 
 # Usage
 
-`localhost:3000` to open Grafana dashboard.
-`localhost:8080` to open PHP application.
-`localhost:9090` to open Prometheus dashboard.
+[http://localhost:81/](http://localhost:81/) to open PHP application.
+[http://localhost:3000/](http://localhost:3000/) to open Grafana dashboard.
+[http://localhost:8080/](http://localhost:8080/) to open cadvisor panel.
+[http://localhost:9090/](http://localhost:9090/) to open Prometheus dashboard.
