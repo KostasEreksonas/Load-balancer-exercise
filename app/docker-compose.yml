@@ -34,6 +34,13 @@ services:
     privileged: true
     devices:
       - "/dev/kmsg"
+  node-exporter:
+    image: prom/node-exporter
+    container_name: node-exporter
+    ports:
+      - "9100:9100"
+    depends_on:
+      - cadvisor
 
 networks:
   loadbalancing:
