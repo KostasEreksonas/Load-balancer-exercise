@@ -32,7 +32,7 @@ Use following command to setup the environment:
 
 # Load Testing
 
-Apache Jmeter will be used for load testing.
+Apache Jmeter will be used for load testing. Testing file can be found [here](https://github.com/KostasEreksonas/Load-balancer-exercise/blob/main/testing/Load_test_multiple_requests.jmx)
 
 # Usage
 
