@@ -81,8 +81,8 @@ testing file can be found [here](https://github.com/KostasEreksonas/Load-balance
 
 ![JMeter](/images/JMeter.png)
 
-Note: If you're running out of memory when running a test, you need to update the following line in the jmeter file:
-`: "${HEAP:="-Xms1g -Xmx1g -XX:MaxMetaspaceSize=256m"}"`
+Note: If you're running out of memory when running a test, you need to update the following line in the jmeter file:<br>
+`: "${HEAP:="-Xms1g -Xmx1g -XX:MaxMetaspaceSize=256m"}"`<br>
 Where `-Xms1g` means min heap size of 1GB and `-Xmx1g` means max heap size of 1GB. Increase the heap size to run larger tests. Sample testing file can be found [here](https://github.com/KostasEreksonas/Load-balancer-exercise/blob/main/testing/Load_test_multiple_requests.jmx).
 
 # Grafana
