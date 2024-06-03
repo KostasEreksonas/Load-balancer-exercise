@@ -80,7 +80,7 @@ testing file can be found [here](https://github.com/KostasEreksonas/Load-balance
 4. run JMeter:
 `./jmeter`
 
-![JMeter](/Load-balancer-exercise/images/JMeter.png)
+![JMeter](/images/JMeter.png)
 
 Note: If you're running out of memory when running a test, you need to update the following line in the jmeter file:
 `: "${HEAP:="-Xms1g -Xmx1g -XX:MaxMetaspaceSize=256m"}"`
@@ -90,7 +90,7 @@ Where `-Xms1g` means min heap size of 1GB and `-Xmx1g` means max heap size of 1G
 
 Default credentials are `admin:admin`.
 
-![Login](/Load-balancer-exercise/images/Grafana_Login.png)
+![Login](/images/Grafana_Login.png)
 
 When starting Grafana for the first time, you need to change the default password.
 
