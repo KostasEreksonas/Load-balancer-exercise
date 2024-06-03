@@ -94,7 +94,7 @@ Default credentials are `admin:admin`.
 
 When starting Grafana for the first time, you need to change the default password.
 
-![Change Password](/Load-balancer-exercise/images/Grafana_ch_pswd.png)
+![Change Password](/images/Grafana_ch_pswd.png)
 
 # Usage
 
