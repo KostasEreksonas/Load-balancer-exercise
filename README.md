@@ -73,8 +73,8 @@ testing file can be found [here](https://github.com/KostasEreksonas/Load-balance
 2. Extract the downloaded archive:
 `tar zxvf apache-jmeter-5.6.3.tgz`
 
-3. Change directory to `apache-jmeter-5.6.3/bin`:<br>
-`cd apache-jmeter-5.6.3/bin`:
+3. Change directory to `apache-jmeter-5.6.3/bin`:
+`cd apache-jmeter-5.6.3/bin`
 
 4. run JMeter:
 `./jmeter`
