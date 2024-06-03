@@ -70,13 +70,13 @@ testing file can be found [here](https://github.com/KostasEreksonas/Load-balance
 
 1. Download Apache JMeter from [the official webpage](https://jmeter.apache.org/download_jmeter.cgi)
 
-2. Extract the downloaded archive:
+2. Extract the downloaded archive:<br>
 `tar zxvf apache-jmeter-5.6.3.tgz`
 
 3. Change directory to `apache-jmeter-5.6.3/bin`:<br>
 `cd apache-jmeter-5.6.3/bin`
 
-4. run JMeter:
+4. run JMeter:<br>
 `./jmeter`
 
 ![JMeter](/images/JMeter.png)
