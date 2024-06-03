@@ -3,11 +3,10 @@ An exercise in load balancing
 
 Table of Contents
 =================
-* [Application_Server](#Application-Server)
-* [Metrics_Server](#Metrics-Server)
-* [Docker_Compose](#Docker-Compose)
-* [Setup](#Setup)
-* [Load_Testing](#Load-Testing)
+* [Description](#Description)
+* [Instructions](#Instructions)
+* [Testing](#Testing)
+* [Grafana](#Grafana)
 * [Usage](#Usage)
 
 # Description
@@ -31,7 +30,7 @@ Metrics server contains these containers:
 
 While testing, application server and metrics server were put on different Linux virtual machines, and Apache Jemeter was run from a separate computer.
 
-# Running Instructions
+# Instructions
 
 These instructions are for a Linux machine.
 
@@ -63,7 +62,7 @@ These instructions are for a Linux machine.
     - If you want to run containers in the background, run:
     `docker compose up -d`
 
-# Load Testing
+# Testing
 
 testing file can be found [here](https://github.com/KostasEreksonas/Load-balancer-exercise/blob/main/testing/Load_test_multiple_requests.jmx)
 
