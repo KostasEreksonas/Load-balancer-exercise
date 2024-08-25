@@ -1,5 +1,5 @@
 # Load-balancer-exercise
-An exercise in load balancing
+An exercise of load balancing
 
 Table of Contents
 =================
