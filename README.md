@@ -48,7 +48,7 @@ These instructions are for a Linux machine.
     - If you want to run containers in the background, run:
     `docker compose up -d`
 
-*** To run metrics server:***
+***To run metrics server:***
 
 1. Clone this repository to application server using:
 `git clone https://github.com/KostasEreksonas/Load-balancer-exercise.git`
